@@ -60,3 +60,13 @@ hs.hotkey.bind(cmdCtrlAlt   , 'h' , keyCode('left'  , ctrlAlt)   , nil , keyCode
 hs.hotkey.bind(cmdCtrlAlt   , 'j' , keyCode('down'  , ctrlAlt)   , nil , keyCode('down'  , ctrlAlt))
 hs.hotkey.bind(cmdCtrlAlt   , 'k' , keyCode('up'    , ctrlAlt)   , nil , keyCode('up'    , ctrlAlt))
 hs.hotkey.bind(cmdCtrlAlt   , 'l' , keyCode('right' , ctrlAlt)   , nil , keyCode('right' , ctrlAlt))
+
+-- grid
+
+hs.grid.MARGINX    = 0
+hs.grid.MARGINY    = 0
+hs.grid.GRIDWIDTH  = 8
+hs.grid.GRIDHEIGHT = 4
+
+hs.hotkey.bind(alt, "g", function() hs.grid.show() end)
+hs.hotkey.bind(alt, ';', function() hs.grid.snap(hs.window.focusedWindow()) end)

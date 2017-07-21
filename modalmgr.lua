@@ -39,7 +39,7 @@ if aria2_loaded then
     end
 end
 if hsearch_loaded then
-    hsearch_keys = hsearch_keys or {"alt", "G"}
+    hsearch_keys = hsearch_keys or {"alt", "space"}
     if string.len(hsearch_keys[2]) > 0 then
         modalmgr:bind(hsearch_keys[1], hsearch_keys[2], 'Launch Hammer Search', function() launchChooser() end)
     end
@@ -57,7 +57,7 @@ if resizeM then
     end
 end
 if cheatsheetM then
-    cheatsheetM_keys = cheatsheetM_keys or {"alt", "S"}
+    cheatsheetM_keys = cheatsheetM_keys or {"alt", "Q"}
     if string.len(cheatsheetM_keys[2]) > 0 then
         modalmgr:bind(cheatsheetM_keys[1], cheatsheetM_keys[2], 'Enter Cheatsheet Mode', function() exit_others() cheatsheetM:enter() end)
     end
